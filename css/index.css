@@ -132,30 +132,6 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
-}
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
 header {
   border-bottom: 4px solid #000;
   background-color: #89C9E4;
@@ -177,6 +153,23 @@ header a {
   font-size: 2rem;
   color: #000;
   text-decoration: none;
+}
+footer {
+  margin: 0 auto;
+  width: 100%;
+  background: #000000;
+}
+footer h2 {
+  font-size: 3rem;
+}
+footer .footer-boxes {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-boxes div {
+  text-align: center;
+  width: 100%;
 }
 #top-section {
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(18, 3, 5, 0.5) 72%, rgba(85, 65, 65, 0.8) 98%), url('../images/cover-pic.jpg');
@@ -247,4 +240,49 @@ header a {
 #feature-section .featurettes p {
   font-size: 25px;
   padding: 20px;
+}
+.about {
+  margin: 0 auto;
+  background: grey;
+  font-size: 2rem;
+  max-width: 500px;
+}
+.about h1,
+.about h2,
+.about h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.about h1 {
+  font-size: 4rem;
+}
+.about h2 {
+  font-size: 3.5rem;
+  background: purple;
+  padding: 5px 0 5px 0;
+}
+.about h3 {
+  font-size: 3rem;
+}
+.about img {
+  width: 100%;
+}
+.about .company {
+  background: white;
+}
+.about .profiles {
+  display: flex;
+  flex-direction: column;
+  background: purple;
+}
+.about .profiles .blurb {
+  padding: 10px 5% 10px 5%;
+}
+.about .profiles .blurb h3 {
+  padding-top: 5px;
+  background: purple;
+}
+.about .profiles h3 {
+  padding: 10px 0 10px 0;
+  background: white;
 }
