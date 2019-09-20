@@ -1,9 +1,6 @@
 #top-section {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, 
-    rgba(18, 3, 5, 0.5) 72%, rgba(85, 65, 65, 0.8) 98%),
-    url('../images/cover-pic.jpg');
-    width: 100%;
-    height: 800px;
+    background: @linearGradient, url('../images/cover-pic.jpg');
+    .sectionStyle(100%, 800px);
     margin-top: 0;
     background-size: cover;
 
@@ -32,9 +29,7 @@
          border: 4px solid black;
 
         a {
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
+            .aStyler();
 
             &:hover {
                 background: black;
@@ -48,8 +43,7 @@
 //FEATURES
 
 #feature-section {
-    width: 100%;
-    height: 800px;
+    .sectionStyle(100%, 700px);
 
     h2 {
          font-size: 100px;
@@ -60,17 +54,13 @@
          border-bottom: 3px solid black;
     }
 
-    .features {
+    .feature-container {
         display: flex;
         justify-content: space-evenly;
     }
 
     .featurettes {
-        margin: 50px;
-        background-color: @nav-bg;
-        width: 100%;
-        height: auto;
-        box-shadow: 0 10px 6px -6px black;
+        .boxStyler();
         
         p {
             font-size: 25px;
@@ -82,13 +72,40 @@
 //Steps Section
 
 #step-section {
-    width: 100%;
-    height: 800px;
+    background: @linearGradient, url('../images/parallax-pic.jpg');
+    .sectionStyle(100%, 600px);
+    margin-top: 0;
+    background-size: cover;
+    padding-top: 10%;
+
+    .steps {
+        margin: 50px;
+        background-color: @nav-bg;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 10px 6px -6px black;
+        text-align: center;
+    }
+
 
     h2 {
          font-size: 80px;
          font-weight: bold;
          margin: 0;
          padding: 30px;
+         color: @nav-bg;
+    }
+
+    .step-container {
+        .displayFlex();
+    }
+
+    h4 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 25px;
     }
 }

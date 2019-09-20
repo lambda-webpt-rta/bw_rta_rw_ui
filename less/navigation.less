@@ -3,8 +3,7 @@ header {
     background-color: @nav-bg;
     margin: 0;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
+    .displayFlex();
 
     nav {
         margin-left: 60px;
@@ -18,8 +17,11 @@ header {
 
     a {
         margin-left: 20px;
-        font-size: 2rem;
-        color: @font-color;
-        text-decoration: none;
+        .aStyler();
+
+        &:hover {
+            background: black;
+            color: @nav-bg;
+        }
     }
 }
