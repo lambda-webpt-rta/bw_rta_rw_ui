@@ -68,24 +68,43 @@
 #feature-section {
     .sectionStyle(100%, 700px);
 
+    @media @mobile {
+        height: auto;
+    }
     h2 {
          .h2Style();
          padding-left: 425px;
+
+         @media @mobile {
+             font-size: 50px;
+             padding-left: 100px;
+         }
     }
 
     .feature-container {
         .displayFlex();
+
+         @media @mobile {
+             flex-wrap: wrap;
+         }
+
     }
 
     .featurettes {
         .boxStyler();
         
+    }
+        
         p {
             font-size: 25px;
             padding: 20px;
+
+            @media @mobile {
+                font-size: 20px;
+            }
         }
     }
-}
+
 
 //Steps Section
 
