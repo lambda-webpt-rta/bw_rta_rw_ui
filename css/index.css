@@ -326,6 +326,20 @@ header a:hover {
   background-size: cover;
   padding-top: 10%;
 }
+@media (max-width: 500px) {
+  #step-section {
+    height: auto;
+  }
+}
+#step-section .step-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  #step-section .step-container {
+    text-align: center;
+  }
+}
 #step-section .steps {
   margin: 50px;
   background-color: #89C9E4;
@@ -334,6 +348,12 @@ header a:hover {
   box-shadow: 0 10px 6px -6px black;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #step-section .steps {
+    padding: 20px;
+    height: auto;
+  }
+}
 #step-section h2 {
   font-size: 80px;
   font-weight: bold;
@@ -341,20 +361,36 @@ header a:hover {
   padding: 30px;
   color: #89C9E4;
 }
-#step-section .step-container {
-  display: flex;
-  justify-content: space-evenly;
+@media (max-width: 500px) {
+  #step-section h2 {
+    font-size: 40px;
+  }
 }
 #step-section h4 {
   font-size: 50px;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  #step-section h4 {
+    font-size: 25px;
+  }
+}
 #step-section p {
   font-size: 25px;
+}
+@media (max-width: 500px) {
+  #step-section p {
+    font-size: 18px;
+  }
 }
 #testimonial-section {
   width: 100%;
   height: 800px;
+}
+@media (max-width: 500px) {
+  #testimonial-section {
+    height: auto;
+  }
 }
 #testimonial-section h2 {
   font-size: 100px;
@@ -364,9 +400,20 @@ header a:hover {
   border-bottom: 3px solid black;
   padding-left: 350px;
 }
+@media screen {
+  #testimonial-section h2 {
+    font-size: 50px;
+    padding-left: 40px;
+  }
+}
 #testimonial-section .testimonial-container {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  #testimonial-section .testimonial-container {
+    flex-wrap: wrap;
+  }
 }
 #testimonial-section .testimonial-container .testimonies {
   position: relative;
@@ -391,6 +438,11 @@ header a:hover {
   width: 100%;
   height: 700px;
 }
+@media (max-width: 500px) {
+  #get-started-section {
+    height: auto;
+  }
+}
 #get-started-section h2 {
   font-size: 100px;
   font-weight: bold;
@@ -398,10 +450,20 @@ header a:hover {
   padding: 30px;
   border-bottom: 3px solid black;
 }
+@media (max-width: 500px) {
+  #get-started-section h2 {
+    font-size: 30px;
+  }
+}
 #get-started-section .get-started-container {
   display: flex;
   justify-content: space-evenly;
   margin: 40px;
+}
+@media (max-width: 500px) {
+  #get-started-section .get-started-container {
+    flex-wrap: wrap;
+  }
 }
 #get-started-section .start {
   margin: 50px;
@@ -423,6 +485,11 @@ header a:hover {
   text-align: center;
   border: 4px solid black;
   margin-left: 28%;
+}
+@media (max-width: 500px) {
+  #get-started-section .start button {
+    margin-left: 20%;
+  }
 }
 #get-started-section .start button a {
   text-decoration: none;
