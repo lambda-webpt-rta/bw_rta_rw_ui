@@ -368,45 +368,45 @@ button a:hover {
   background: black;
   color: #89C9E4;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   header {
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   header h1 {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   header a {
     padding-right: 25px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #top-section {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #top-section .top-container {
     text-align: center;
     padding: 40px 30px;
     height: 400px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #top-section p {
     font-size: 30px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #top-section h1 {
     font-size: 40px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #top-section button {
     margin-left: 25%;
     margin-top: 10%;
@@ -416,7 +416,7 @@ button a:hover {
   width: 100%;
   height: 700px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section {
     height: auto;
   }
@@ -429,7 +429,7 @@ button a:hover {
   border-bottom: 3px solid black;
   padding-left: 425px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section h2 {
     font-size: 50px;
     padding-left: 100px;
@@ -439,38 +439,38 @@ button a:hover {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section .feature-container {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section p {
     font-size: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section .step-container {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section .steps {
     padding: 20px;
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section h2 {
     font-size: 40px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section h4 {
     font-size: 25px;
   }
@@ -478,7 +478,7 @@ button a:hover {
 #step-section p {
   font-size: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section p {
     font-size: 18px;
   }
@@ -487,7 +487,7 @@ button a:hover {
   width: 100%;
   height: 800px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #testimonial-section {
     height: auto;
   }
@@ -500,7 +500,7 @@ button a:hover {
   border-bottom: 3px solid black;
   padding-left: 350px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #testimonial-section h2 {
     font-size: 50px;
     padding-left: 40px;
@@ -510,12 +510,12 @@ button a:hover {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #testimonial-section .testimonial-container {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section {
     height: auto;
   }
@@ -527,100 +527,100 @@ button a:hover {
   padding: 30px;
   border-bottom: 3px solid black;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section h2 {
     font-size: 30px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section .get-started-container {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section .start button {
     margin-left: 20%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section h2 {
     font-size: 50px;
     padding-left: 100px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section .feature-container {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #feature-section p {
     font-size: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section .step-container {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section .steps {
     padding: 20px;
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section h2 {
     font-size: 40px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section h4 {
     font-size: 25px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #step-section p {
     font-size: 18px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #testimonial-section {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #testimonial-section h2 {
     font-size: 50px;
     padding-left: 40px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #testimonial-section .testimonial-container {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section {
     height: auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section h2 {
     font-size: 30px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section .get-started-container {
     flex-wrap: wrap;
   }
@@ -629,7 +629,7 @@ button a:hover {
   font-size: 25px;
   padding: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   #get-started-section .start button {
     margin-left: 20%;
   }
