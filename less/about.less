@@ -1,8 +1,11 @@
 .about {
     margin: 0 auto;
-    background: grey;
     font-size: 2rem;
     max-width: 500px;
+
+    @media @tablet {
+        max-width: 800px;
+    }
 
     h1, h2, h3 {
         text-align: center;
@@ -15,43 +18,92 @@
 
     h2 {
         font-size: 3.5rem;
-        background: purple;
+        //background: purple;
         padding: 5px 0 5px 0;
+        margin: 10px 0 10px 0;
+        border-top: 1px dotted black;
+        border-bottom: 1px dotted black;
     }
 
     h3 {
         font-size: 3rem;
     }
 
+    p {
+        padding: 10px 2% 10px 2%;
+    }
+
     img {
         width: 100%;
     }
 
+    .intro {
+        margin: 10px 0 10px 0;
+    }
+
     .company {
+        margin: 10px 0 10px 0;
         background: white;
+
+        img {
+            margin: 15px 0 15px 0;
+        }
+    }
+
+    .about-nav {
+        header {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-items: space-around;
+        }
     }
 
     .profiles {
         display: flex;
         flex-direction: column;
-        background: purple;
+
+
+        img {
+            display: block;
+        }
+        .individual {
+            margin: 5px 0 5px 0;
+
+            @media @tablet {
+                display: flex;
+                flex-direction: row;
+                
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+
+                img {
+                    width: 50%;
+                }
+                .blurb {
+                    width: 50%;
+                    height: 50%;
+                    margin: auto 0;
+
+                    p {
+                        padding: 10px 4% 10px 4%;
+                    }
+                }
+            }
+        }
 
         .blurb {
-            padding: 10px 5% 10px 5%;
+            background: lightgrey;
+            //margin-top: 1rem; 
 
             h3 {
-                padding-top: 5px;
-                background: purple;
-            }
-
-            p {
-
+                background: darkgrey;
             }
         }
 
         h3 {
             padding: 10px 0 10px 0;
-            background: white;
         }
     }
 }

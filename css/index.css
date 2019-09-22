@@ -243,9 +243,13 @@ footer .footer-boxes div {
 }
 .about {
   margin: 0 auto;
-  background: grey;
   font-size: 2rem;
   max-width: 500px;
+}
+@media (min-width: 500px) {
+  .about {
+    max-width: 800px;
+  }
 }
 .about h1,
 .about h2,
@@ -258,31 +262,72 @@ footer .footer-boxes div {
 }
 .about h2 {
   font-size: 3.5rem;
-  background: purple;
   padding: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
 }
 .about h3 {
   font-size: 3rem;
 }
+.about p {
+  padding: 10px 2% 10px 2%;
+}
 .about img {
   width: 100%;
 }
+.about .intro {
+  margin: 10px 0 10px 0;
+}
 .about .company {
+  margin: 10px 0 10px 0;
   background: white;
+}
+.about .company img {
+  margin: 15px 0 15px 0;
+}
+.about .about-nav header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: space-around;
 }
 .about .profiles {
   display: flex;
   flex-direction: column;
-  background: purple;
+}
+.about .profiles img {
+  display: block;
+}
+.about .profiles .individual {
+  margin: 5px 0 5px 0;
+}
+@media (min-width: 500px) {
+  .about .profiles .individual {
+    display: flex;
+    flex-direction: row;
+  }
+  .about .profiles .individual:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .about .profiles .individual img {
+    width: 50%;
+  }
+  .about .profiles .individual .blurb {
+    width: 50%;
+    height: 50%;
+    margin: auto 0;
+  }
+  .about .profiles .individual .blurb p {
+    padding: 10px 4% 10px 4%;
+  }
 }
 .about .profiles .blurb {
-  padding: 10px 5% 10px 5%;
+  background: lightgrey;
 }
 .about .profiles .blurb h3 {
-  padding-top: 5px;
-  background: purple;
+  background: darkgrey;
 }
 .about .profiles h3 {
   padding: 10px 0 10px 0;
-  background: white;
 }
