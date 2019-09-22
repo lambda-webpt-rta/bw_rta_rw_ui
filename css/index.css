@@ -164,12 +164,6 @@ header {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 header nav {
   margin-left: 60px;
   margin-top: 0;
@@ -177,11 +171,6 @@ header nav {
 header h1 {
   font-size: 3.5rem;
   color: #000;
-}
-@media (max-width: 500px) {
-  header h1 {
-    margin-bottom: 20px;
-  }
 }
 header a {
   margin-left: 20px;
@@ -193,22 +182,12 @@ header a:hover {
   background: black;
   color: #89C9E4;
 }
-@media (max-width: 500px) {
-  header a {
-    padding-right: 25px;
-  }
-}
 #top-section {
   background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(18, 3, 5, 0.5) 72%, rgba(85, 65, 65, 0.8) 98%), url('../images/cover-pic.jpg');
   width: 100%;
   height: 800px;
   margin-top: 0;
   background-size: cover;
-}
-@media (max-width: 500px) {
-  #top-section {
-    height: auto;
-  }
 }
 #top-section .top-container {
   padding: 100px;
@@ -217,34 +196,17 @@ header a:hover {
   width: 100%;
   box-sizing: border-box;
 }
-@media (max-width: 500px) {
-  #top-section .top-container {
-    text-align: center;
-    padding: 40px 30px;
-    height: 400px;
-  }
-}
 #top-section p {
   color: #89C9E4;
   font-size: 60px;
   font-weight: bold;
-}
-@media (max-width: 500px) {
-  #top-section p {
-    font-size: 30px;
-  }
 }
 #top-section h1 {
   color: #000;
   font-size: 75px;
   font-weight: bold;
 }
-@media (max-width: 500px) {
-  #top-section h1 {
-    font-size: 40px;
-  }
-}
-#top-section button {
+button {
   display: block;
   background-color: #89C9E4;
   width: 200px;
@@ -254,20 +216,201 @@ header a:hover {
   text-align: center;
   border: 4px solid black;
 }
+button a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+button a:hover {
+  background: black;
+  color: #89C9E4;
+}
+#feature-section {
+  width: 100%;
+  height: 700px;
+}
+#feature-section h2 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 30px;
+  border-bottom: 3px solid black;
+  padding-left: 425px;
+}
+#feature-section .feature-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#feature-section .featurettes {
+  margin: 50px;
+  background-color: #89C9E4;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 6px -6px black;
+  text-align: center;
+}
+#feature-section p {
+  font-size: 25px;
+  padding: 20px;
+}
+#step-section {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(18, 3, 5, 0.5) 72%, rgba(85, 65, 65, 0.8) 98%), url('../images/parallax-pic.jpg');
+  width: 100%;
+  height: 600px;
+  margin-top: 0;
+  background-size: cover;
+  padding-top: 10%;
+}
+#step-section .step-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#step-section .steps {
+  margin: 50px;
+  background-color: #89C9E4;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 6px -6px black;
+  text-align: center;
+}
+#step-section h2 {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  padding: 30px;
+  color: #89C9E4;
+}
+#step-section h4 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#step-section p {
+  font-size: 25px;
+}
+#testimonial-section {
+  width: 100%;
+  height: 800px;
+}
+#testimonial-section h2 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 30px;
+  border-bottom: 3px solid black;
+  padding-left: 350px;
+}
+#testimonial-section .testimonial-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#testimonial-section .testimonial-container .testimonies {
+  position: relative;
+  width: 350px;
+  margin: 50px;
+  background: #89C9E4;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 6px -6px black;
+}
+#testimonial-section .testimonial-container p {
+  font-size: 17px;
+}
+#testimonial-section .testimonial-container img {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 50%;
+}
+#get-started-section {
+  width: 100%;
+  height: 700px;
+}
+#get-started-section h2 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 30px;
+  border-bottom: 3px solid black;
+}
+#get-started-section .get-started-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+#get-started-section .start {
+  margin: 50px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+#get-started-section .start p {
+  font-size: 25px;
+  padding: 20px;
+}
+#get-started-section .start button {
+  display: block;
+  background-color: #89C9E4;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 4px solid black;
+  margin-left: 28%;
+}
+#get-started-section .start button a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+#get-started-section .start button a:hover {
+  background: black;
+  color: #89C9E4;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header a {
+    padding-right: 25px;
+  }
+}
+@media (max-width: 500px) {
+  #top-section {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  #top-section .top-container {
+    text-align: center;
+    padding: 40px 30px;
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  #top-section p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  #top-section h1 {
+    font-size: 40px;
+  }
+}
 @media (max-width: 500px) {
   #top-section button {
     margin-left: 25%;
     margin-top: 10%;
   }
-}
-#top-section button a {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-}
-#top-section button a:hover {
-  background: black;
-  color: #89C9E4;
 }
 #feature-section {
   width: 100%;
@@ -301,52 +444,20 @@ header a:hover {
     flex-wrap: wrap;
   }
 }
-#feature-section .featurettes {
-  margin: 50px;
-  background-color: #89C9E4;
-  width: 100%;
-  height: auto;
-  box-shadow: 0 10px 6px -6px black;
-  text-align: center;
-}
-#feature-section p {
-  font-size: 25px;
-  padding: 20px;
-}
 @media (max-width: 500px) {
   #feature-section p {
     font-size: 20px;
   }
-}
-#step-section {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(18, 3, 5, 0.5) 72%, rgba(85, 65, 65, 0.8) 98%), url('../images/parallax-pic.jpg');
-  width: 100%;
-  height: 600px;
-  margin-top: 0;
-  background-size: cover;
-  padding-top: 10%;
 }
 @media (max-width: 500px) {
   #step-section {
     height: auto;
   }
 }
-#step-section .step-container {
-  display: flex;
-  justify-content: space-evenly;
-}
 @media (max-width: 500px) {
   #step-section .step-container {
     text-align: center;
   }
-}
-#step-section .steps {
-  margin: 50px;
-  background-color: #89C9E4;
-  width: 100%;
-  height: auto;
-  box-shadow: 0 10px 6px -6px black;
-  text-align: center;
 }
 @media (max-width: 500px) {
   #step-section .steps {
@@ -354,21 +465,10 @@ header a:hover {
     height: auto;
   }
 }
-#step-section h2 {
-  font-size: 80px;
-  font-weight: bold;
-  margin: 0;
-  padding: 30px;
-  color: #89C9E4;
-}
 @media (max-width: 500px) {
   #step-section h2 {
     font-size: 40px;
   }
-}
-#step-section h4 {
-  font-size: 50px;
-  font-weight: bold;
 }
 @media (max-width: 500px) {
   #step-section h4 {
@@ -400,7 +500,7 @@ header a:hover {
   border-bottom: 3px solid black;
   padding-left: 350px;
 }
-@media screen {
+@media (max-width: 500px) {
   #testimonial-section h2 {
     font-size: 50px;
     padding-left: 40px;
@@ -414,29 +514,6 @@ header a:hover {
   #testimonial-section .testimonial-container {
     flex-wrap: wrap;
   }
-}
-#testimonial-section .testimonial-container .testimonies {
-  position: relative;
-  width: 350px;
-  margin: 50px;
-  background: #89C9E4;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  box-shadow: 0 10px 6px -6px black;
-}
-#testimonial-section .testimonial-container p {
-  font-size: 17px;
-}
-#testimonial-section .testimonial-container img {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  border-radius: 50%;
-}
-#get-started-section {
-  width: 100%;
-  height: 700px;
 }
 @media (max-width: 500px) {
   #get-started-section {
@@ -455,48 +532,105 @@ header a:hover {
     font-size: 30px;
   }
 }
-#get-started-section .get-started-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 40px;
-}
 @media (max-width: 500px) {
   #get-started-section .get-started-container {
     flex-wrap: wrap;
   }
-}
-#get-started-section .start {
-  margin: 50px;
-  width: 500px;
-  height: auto;
-  text-align: center;
-}
-#get-started-section .start p {
-  font-size: 25px;
-  padding: 20px;
-}
-#get-started-section .start button {
-  display: block;
-  background-color: #89C9E4;
-  width: 200px;
-  height: 45px;
-  font-size: 2rem;
-  border-radius: 20px;
-  text-align: center;
-  border: 4px solid black;
-  margin-left: 28%;
 }
 @media (max-width: 500px) {
   #get-started-section .start button {
     margin-left: 20%;
   }
 }
-#get-started-section .start button a {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
+@media (max-width: 500px) {
+  #feature-section {
+    height: auto;
+  }
 }
-#get-started-section .start button a:hover {
-  background: black;
-  color: #89C9E4;
+@media (max-width: 500px) {
+  #feature-section h2 {
+    font-size: 50px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 500px) {
+  #feature-section .feature-container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  #feature-section p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  #step-section {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  #step-section .step-container {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  #step-section .steps {
+    padding: 20px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  #step-section h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  #step-section h4 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  #step-section p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  #testimonial-section {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  #testimonial-section h2 {
+    font-size: 50px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 500px) {
+  #testimonial-section .testimonial-container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  #get-started-section {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  #get-started-section h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  #get-started-section .get-started-container {
+    flex-wrap: wrap;
+  }
+}
+#get-started-section .start p {
+  font-size: 25px;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  #get-started-section .start button {
+    margin-left: 20%;
+  }
 }
