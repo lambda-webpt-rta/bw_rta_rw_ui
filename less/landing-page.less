@@ -1,9 +1,7 @@
+
 #top-section {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, 
-    rgba(18, 3, 5, 0.5) 72%, rgba(85, 65, 65, 0.8) 98%),
-    url('../images/cover-pic.jpg');
-    width: 100%;
-    height: 800px;
+    background: @linearGradient, url('../images/cover-pic.jpg');
+    .sectionStyle(100%, 800px);
     margin-top: 0;
     background-size: cover;
 
@@ -14,17 +12,19 @@
         width: 100%;
         box-sizing: border-box;
     }
-
-    p {
-        color: @nav-bg;
-        font-size: 60px;
-        font-weight: bold;
+    
+        p {
+            color: @nav-bg;
+            font-size: 60px;
+            font-weight: bold;
     }
-
+   
     h1 {
         color: @font-color;
         font-size: 75px;
         font-weight: bold;
+        }
+    
     }
 
     button {
@@ -32,9 +32,7 @@
          border: 4px solid black;
 
         a {
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
+            .aStyler();
 
             &:hover {
                 background: black;
@@ -43,40 +41,149 @@
         }
     }
     
-}
+
 
 //FEATURES
 
 #feature-section {
-    width: 100%;
-    height: 800px;
+    .sectionStyle(100%, 700px);
 
     h2 {
-        font-size: 100px;
-        font-weight: bold;
-        margin: 20px;
-        padding: 30px;
-        padding-left: 500px;
-        border-bottom: 3px solid black;
+         .h2Style();
+         padding-left: 425px;
     }
 
-    
-
-    .features {
-        display: flex;
-        justify-content: space-evenly;
+    .feature-container {
+        .displayFlex();
     }
 
     .featurettes {
-        margin: 50px;
-        background-color: @nav-bg;
-        width: 100%;
-        height: auto;
-        box-shadow: 0 10px 6px -6px black;
+        .boxStyler();
+        
+    }
         
         p {
             font-size: 25px;
             padding: 20px;
         }
     }
+
+
+//Steps Section
+
+#step-section {
+    background: @linearGradient, url('../images/parallax-pic.jpg');
+    .sectionStyle(100%, 600px);
+    margin-top: 0;
+    background-size: cover;
+    padding-top: 10%;
+
+    .step-container {
+        .displayFlex();
+    }
+
+
+    .steps {
+        .boxStyler();
+    }
+
+
+    h2 {
+         font-size: 80px;
+         font-weight: bold;
+         margin: 0;
+         padding: 30px;
+         color: @nav-bg;
+    }
+
+    
+    h4 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 25px;
+    }
 }
+
+//Testimonials
+
+#testimonial-section {
+    .sectionStyle(100%, 800px);
+    
+    h2 {
+        .h2Style();
+        padding-left: 350px;
+    }
+
+    .testimonial-container {
+       .displayFlex();
+
+        .testimonies {
+            position: relative;
+            width: 350px;
+            margin: 50px;
+            background: @nav-bg;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 10px 6px -6px black;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border-radius: 50%;
+
+        }
+    }
+}
+
+#get-started-section {
+    .sectionStyle(100%, 700px);
+
+    h2 {
+        .h2Style();
+    }
+
+    .get-started-container {
+        .displayFlex();
+        margin: 40px;
+    }
+
+    .start {
+        margin: 50px;
+        width: 500px;
+        height: auto;
+        text-align: center;
+        text-align: center;
+
+        p {
+            font-size: 25px;
+            padding: 20px;
+        }
+
+       button {
+           .signUp(block, @nav-bg, 200px, 45px, 2rem, 20px, center);
+           border: 4px solid black;
+           margin-left: 28%;
+
+           a {
+               .aStyler();
+
+               &:hover {
+                   background: black;
+                   color: @nav-bg;
+               }
+           }
+
+       }
+    }
+}
+
