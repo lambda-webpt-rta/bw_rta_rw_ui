@@ -132,7 +132,7 @@ table {
 html {
   font-size: 62.5%;
 }
-header {
+.about-nav {
   border-bottom: 4px solid #000;
   background-color: #89C9E4;
   margin: 0;
@@ -140,19 +140,72 @@ header {
   display: flex;
   justify-content: space-around;
 }
-header nav {
-  margin-left: 60px;
-  margin-top: 0;
+.about-nav header {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
 }
-header h1 {
-  font-size: 3.5rem;
-  color: #000;
+@media (min-width: 500px) {
+  .about-nav header {
+    max-width: 800px;
+  }
 }
-header a {
-  margin-left: 20px;
-  font-size: 2rem;
-  color: #000;
+@media (min-width: 500px) and (min-width: 800px) {
+  .about-nav header {
+    max-width: 1024px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.about-nav header h1 {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  font-size: 4rem;
+}
+@media (min-width: 800px) {
+  .about-nav header h1 {
+    width: 50%;
+    text-align: left;
+  }
+}
+.about-nav header nav {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .about-nav header nav {
+    width: 50%;
+  }
+}
+.about-nav header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin: 0 auto;
+  width: 100%;
+}
+.about-nav header ul li {
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .about-nav header ul {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 500px) and (min-width: 800px) {
+  .about-nav header ul {
+    justify-content: space-between;
+  }
+}
+.about-nav header a {
+  font-size: 3rem;
   text-decoration: none;
+  color: black;
+  margin: 0;
 }
 footer {
   margin: 0 auto;
@@ -251,6 +304,11 @@ footer .footer-boxes div {
     max-width: 800px;
   }
 }
+@media (min-width: 500px) and (min-width: 800px) {
+  .about {
+    max-width: 1024px;
+  }
+}
 .about h1,
 .about h2,
 .about h3 {
@@ -279,6 +337,27 @@ footer .footer-boxes div {
 .about .intro {
   margin: 10px 0 10px 0;
 }
+@media (min-width: 500px) {
+  .about .intro {
+    background-size: cover;
+    height: 500px;
+    background-image: url("../images/room-3m9132_mMSQ-unsplash.jpg");
+    background-color: darkgreen;
+    background-blend-mode: screen;
+    margin: 0px;
+  }
+  .about .intro h1 {
+    color: #000;
+    font-size: 75px;
+    font-weight: bold;
+  }
+  .about .intro p {
+    color: blue;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+}
 .about .company {
   margin: 10px 0 10px 0;
   background: white;
@@ -286,15 +365,50 @@ footer .footer-boxes div {
 .about .company img {
   margin: 15px 0 15px 0;
 }
-.about .about-nav header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-items: space-around;
+@media (min-width: 500px) {
+  .about .company {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about .company h2 {
+    width: 100%;
+  }
+  .about .company img {
+    width: 48%;
+  }
+  .about .company p {
+    width: 48%;
+  }
 }
 .about .profiles {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 800px) {
+  .about .profiles .roles {
+    background-size: cover;
+    background-image: url("../images/dil-F35EmcotWPY-unsplash.jpg");
+  }
+  .about .profiles .roles .individual {
+    margin: 20px 0 20px 0;
+    justify-content: space-around;
+  }
+  .about .profiles .roles:nth-of-type(2) {
+    background-image: url("../images/ui-developers.jpg");
+    background-blend-mode: screen;
+    background-color: #2f2e2e;
+  }
+  .about .profiles .roles:nth-of-type(3) {
+    background-image: url("../images/front-end.jpg");
+  }
+  .about .profiles .roles:nth-of-type(4) {
+    background-image: url("../images/backend.jpg");
+  }
+  .about .profiles .roles h3 {
+    color: gold;
+  }
 }
 .about .profiles img {
   display: block;
@@ -304,10 +418,11 @@ footer .footer-boxes div {
 }
 @media (min-width: 500px) {
   .about .profiles .individual {
+    margin: 0;
     display: flex;
     flex-direction: row;
   }
-  .about .profiles .individual:nth-child(even) {
+  .about .profiles .individual:nth-of-type(even) {
     flex-direction: row-reverse;
   }
   .about .profiles .individual img {
@@ -315,11 +430,18 @@ footer .footer-boxes div {
   }
   .about .profiles .individual .blurb {
     width: 50%;
-    height: 50%;
     margin: auto 0;
   }
   .about .profiles .individual .blurb p {
     padding: 10px 4% 10px 4%;
+  }
+}
+@media (min-width: 500px) and (min-width: 800px) {
+  .about .profiles .individual img {
+    width: 33%;
+  }
+  .about .profiles .individual .blurb {
+    width: 33%;
   }
 }
 .about .profiles .blurb {
@@ -327,6 +449,11 @@ footer .footer-boxes div {
 }
 .about .profiles .blurb h3 {
   background: darkgrey;
+}
+@media (min-width: 800px) {
+  .about .profiles .blurb h3 {
+    color: black;
+  }
 }
 .about .profiles h3 {
   padding: 10px 0 10px 0;
