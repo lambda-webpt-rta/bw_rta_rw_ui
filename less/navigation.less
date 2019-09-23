@@ -1,32 +1,104 @@
 header {
-    border-bottom: 4px solid @navigation-border;
-    background-color: @nav-bg;
-    margin: 0;
-    padding: 20px 0;
-    .displayFlex();
-    
+  border-bottom: 4px solid @navigation-border;
+  background-color: @nav-bg;
+  margin: 0;
+  padding: 20px 0;
+  .displayFlex();
 
-    nav {
-        margin-left: 60px;
-        margin-top: 0;
-        overflow: hidden;
+  nav {
+    margin-left: 60px;
+    margin-top: 0;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: @font-color;
+  }
+
+  a {
+    margin-left: 20px;
+    .aStyler();
+
+    &:hover {
+      background: black;
+      color: @nav-bg;
     }
+    .about-nav {
+      border-bottom: 4px solid @navigation-border;
+      background-color: @nav-bg;
+      margin: 0;
+      padding: 20px 0;
+      .displayFlex();
 
-    h1 {
-        font-size: 3.5rem;
-        color: @font-color;
-        
-    }
+      header {
+        display: flex;
+        flex-direction: column;
+        max-width: @phone-max-width;
+        //border: 1px dashed black;
+        width: 100%;
 
-    a {
-        margin-left: 20px;
-        .aStyler();
-        
+        @media @tablet {
+          max-width: @tablet-max-width;
 
-        &:hover {
-            background: black;
-            color: @nav-bg;
-            
+          @media @desktop {
+            max-width: @desktop-max-width;
+            flex-direction: row;
+            justify-content: space-between;
+          }
         }
+
+        h1 {
+          margin: 10px 0 10px 0;
+          text-align: center;
+          font-size: 4rem;
+
+          @media @desktop {
+            width: 50%;
+            text-align: left;
+          }
+        }
+
+        nav {
+          width: 100%;
+
+          @media @desktop {
+            width: 50%;
+          }
+        }
+
+        ul {
+          //border: 1px dashed black;
+          display: flex;
+          flex-direction: column;
+          align-items: space-around;
+          margin: 0 auto;
+          width: 100%;
+
+          li {
+            margin: 10px 0 10px 0;
+            text-align: center;
+          }
+
+          @media @tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 2rem;
+
+            @media @desktop {
+              justify-content: space-between;
+            }
+          }
+        }
+
+        a {
+          font-size: 3rem;
+          text-decoration: none;
+          color: black;
+          margin: 0;
+        }
+      }
     }
+  }
 }
